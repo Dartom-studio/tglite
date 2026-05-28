@@ -57,8 +57,13 @@ jobs:
       - name: Prepare main.py for buildozer
         run: cp src/main_mobile.py main.py
 
+      - name: Accept Android licenses
+        run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+
       - name: Build APK
         run: buildozer android debug
+        env:
+          ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
