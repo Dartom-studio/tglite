@@ -1,0 +1,17 @@
+# TG Lite — зависимости
+
+# Telegram MTProto клиент
+telethon>=1.36.0
+
+# Шифрование (ускорение Telethon)
+cryptg>=0.4.0
+
+# Прокси (SOCKS4/5, HTTP)
+PySocks>=1.7.1
+
+# Для сборки EXE (Windows)
+pyinstaller>=6.0.0
+
+# Для сборки APK (Linux/macOS)
+# buildozer>=1.5.0   # раскомментировать на Linux/macOS
+# kivy>=2.3.0        # только для мобильной сборки
