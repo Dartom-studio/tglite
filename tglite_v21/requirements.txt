@@ -1,0 +1,15 @@
+# TG Lite v2.1 — зависимости
+
+# Telegram
+telethon>=1.36.0
+cryptg>=0.4.0
+PySocks>=1.7.1
+
+# GUI / трей / уведомления
+pillow>=10.0.0
+pystray>=0.19.0
+plyer>=2.1.0
+qrcode>=7.4.2
+
+# Сборка EXE
+pyinstaller>=6.0.0
